@@ -1,0 +1,61 @@
+/*样式重置-reset*/
+    body,h1,h2,h3,p,dl,dd,ul,ol,form,input,textarea,th,td,select {
+        margin:0;
+        padding:0;
+    }
+    em {
+        font-style:normal;
+    }
+    li {
+        list-style:none;
+    }
+    a {
+        text-decoration:none;
+    }
+    img {
+        border:none;
+        vertical-align:top;
+    }
+    table {
+        border-collapse:collapse;
+    }
+    input,textarea {
+        outline:none;
+    }
+    textarea {
+        resize:none;
+        overflow:auto;
+    }
+
+    /*header*/
+
+    /*.header {*/
+        /*position:relative;*/
+        /*display:flex;*/
+        /*line-height:30px;*/
+        /*min-width:1190px;*/
+        /*margin:0 130px 0 120px;*/
+        /*font-size:12px;*/
+        /*font-family:PingFang-SC;*/
+        /*font-weight:Regular;*/
+        /*color:rgba(0,0,0,0.5);*/
+    /*}*/
+    /*.h-left {*/
+        /*padding-left:6px;*/
+        /*padding-right:34px;*/
+    /*}*/
+    /*.h-right {*/
+        /*position:absolute;*/
+        /*right:0;*/
+    /*}*/
+    /*.h-right ul {*/
+        /*padding:0;*/
+        /*margin:0;*/
+    /*}*/
+    /*.h-right ul li {*/
+        /*display:inline-block;*/
+        /*padding-left:12px;*/
+    /*}*/
+
+
+

@@ -1,0 +1,355 @@
+$bgColor:rgba(242,242,242,1);
+$width:1190px;
+$font:12px;
+$B:1px solid black;
+
+  body {
+    font-weight:Regular;
+    font-family:PingFang-SC;
+    background-color:$bgColor;
+  }
+
+  .wrapper {
+    width:$width;
+    margin:0 auto;
+    background-color:inherit;
+  }
+
+   //头部样式
+  #header {
+    height:30px;
+    font-size:12px;
+    text-align:center;
+    line-height:30px;
+    .h-left {
+      float:left;
+      padding-left:0;
+      color:rgba(102,102,102,1);
+      a {
+        color:rgba(102,102,102,1);
+        padding-right:20px;
+      }
+      .active {
+          color:rgba(230,45,45,1);
+      }
+    }
+    .h-right {
+      float:right;
+      padding-right:0;
+      ul {
+        letter-spacing:-8px;
+      }
+      li {
+        display:inline-block;
+        letter-spacing:normal;
+        padding-left:20px;
+        a {
+          color:rgba(102,102,102,1);
+
+        }
+      }
+    }
+  }
+
+
+  #search {
+    height:150px;
+    background-color:rgba(255,255,255,1);
+    .box {
+      height:150px;
+      width:$width;
+      margin:0 auto;
+      margin-bottom:-25px;
+      display:flex;
+      .logo {
+        width:193px;
+        height:76px;
+        margin-top:20px;
+        display:flex;
+        align-items:center;
+        .logo-img {
+          width:90px;
+          img {
+            width:100%;
+          }
+        }
+        .logo-font {
+          width:103px;
+          height:25px;
+          img {
+            display:block;
+            width:100%;
+          }
+        }
+
+
+      }
+      .form {
+        width:550px;
+        height:40px;
+        border:2px solid rgba(230,45,45,1);
+        margin-left:97px;
+        margin-top:47px;
+      }
+      .cart {
+        margin-left:50px;
+        margin-top:47px;
+        width:150px;
+        height:40px;
+        border:1px solid rgba(0,0,0,0.2);
+      }
+      .img {
+        width:70px;
+        height:70px;
+        border:$B;
+        margin-top:31px;
+        margin-left:56px;
+      }
+    }
+    .bar {
+      width:$width;
+      padding-left:230px;
+      padding-right:256px;
+      height:20px;
+      line-height:20px;
+      font-size:16px;
+
+      ul {
+        letter-spacing:-8px;
+        li {
+          letter-spacing:normal;
+          display:inline-block;
+          padding-left:30px;
+          a {
+            color:rgba(51,51,51,1);
+          }
+          a:hover {
+            color: #ff0000;
+            background-color:#f2f2f2;
+          }
+        }
+      }
+    }
+
+
+  }
+
+  #slider {
+    height:330px;
+    margin-bottom:10px;
+    border:$B;
+    display:flex;
+    .mulu {
+        width:230px;
+        height:360px;
+        border:$B;
+        margin-top:-30px;
+    }
+    .lunbo {
+        width:700px;
+        height:320px;
+        margin:10px 10px 0 10px;
+        border:$B;
+    }
+    .ads {
+        width:240px;
+        height:320px;
+        border:$B;
+        margin-top:10px;
+    }
+  }
+
+
+
+  #special {
+      height:300px;
+      margin-bottom:30px;
+      border:$B;
+      display:flex;
+      .sp-left {
+        width:230px;
+        height:300px;
+        border:$B;
+      }
+      .sp-slid {
+        height:300px;
+        flex:1;
+      }
+      .sp-right {
+        width:240px;
+        height:300px;
+        border:$B;
+      }
+  }
+
+  .categories {
+      height:610px;
+      border:$B;
+      margin-bottom:30px;
+      display:flex;
+      .c-left {
+          width:230px;
+          height:610px;
+          border:$B;
+      }
+      .c-right {
+          flex:1;
+          border:$B;
+
+
+
+
+      }
+  }
+
+
+
+
+
+/*样式重置-reset*/
+body,h1,h2,h3,p,dl,dd,ul,ol,form,input,textarea,th,td,select {
+  margin:0;
+  padding:0;
+}
+em {
+  font-style:normal;
+}
+li {
+  list-style:none;
+}
+a {
+  text-decoration:none;
+}
+img {
+  border:none;
+  vertical-align:top;
+}
+table {
+  border-collapse:collapse;
+}
+input,textarea {
+  outline:none;
+}
+textarea {
+  resize:none;
+  overflow:auto;
+}
+  //#header {
+  //  height: 30px;
+  //  .wrapper {
+  //    display:flex;
+  //    line-height: 30px;
+  //    font-size: $font;
+  //    font-family: PingFang-SC;
+  //    font-weight: Regular;
+  //    color: rgba(0, 0, 0, 0.5);
+  //
+  //    .h-left {
+  //      padding-left: 120px;
+  //      padding-right: 34px;
+  //    }
+  //
+  //    .h-user {
+  //      span {
+  //        color:rgba(230,45,45,1);
+  //      }
+  //      p {
+  //        display:inline-block;
+  //        float:right;
+  //        padding-left:10px;
+  //      }
+  //    }
+  //
+  //    .h-right {
+  //      position:absolute;
+  //      right:130px;
+  //      ul {
+  //        padding: 0;
+  //        margin: 0;
+  //        font-size: 0;
+  //        li {
+  //          padding-left: 20px;
+  //          display: inline-block;
+  //          font-size:$font;
+  //        }
+  //      }
+  //    }
+  //  }
+  //}
+  //
+  //#search {
+  //    height:150px;
+  //    background-color:rgba(255,255,255,1);
+  //    .wrapper {
+  //        font-size:0;
+  //        height:150px;
+  //        background:grey;
+  //        div {
+  //          display:inline-block;
+  //        }
+  //        .s-left {
+  //          width:193px;
+  //          height:76px;
+  //          background:yellow;
+  //
+  //        }
+  //        .s-input {
+  //          width:550px;
+  //          height:40px;
+  //          border:2px solid rgba(230,45,45,1);
+  //
+  //        }
+  //        .s-cart {
+  //          width:150px;
+  //          height:40px;
+  //          border:1px solid rgba(0,0,0,0.2);
+  //
+  //        }
+  //        .s-pr {
+  //          width:70px;
+  //          height:70px;
+  //
+  //          background:red;
+  //        }
+  //
+  //        .s-bottom {
+  //          position:absolute;
+  //          bottom:5px;
+  //          li {
+  //            display: inline-block;
+  //            font-size:16px;
+  //          }
+  //        }
+  //    }
+  //
+  //
+  //}
+  //
+  //#slider {
+  //    height:330px;
+  //    .mulu {
+  //        height:360px;
+  //        width:230px;
+  //        border:1px solid black;
+  //        position:absolute;
+  //        top:-30px;
+  //        left:120px;
+  //    }
+  //    .lunbo {
+  //        position:absolute;
+  //        height:320px;
+  //        width:700px;
+  //        border:1px solid black;
+  //        margin:10px;
+  //        left:350px;
+  //    }
+  //    .ads {
+  //        height:320px;
+  //        width:240px;
+  //        border:1px solid black;
+  //        position:absolute;
+  //        right:130px;
+  //        margin:10px 0;
+  //    }
+  //}
+

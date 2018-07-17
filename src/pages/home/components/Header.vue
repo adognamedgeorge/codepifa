@@ -3,8 +3,8 @@
     <div class="header">
       <div class="h-left">云蚂蚁官网</div>
       <div class="h-user">
-        Hi,<span>云蚂蚁1234</span>
-          <p>退出</p>
+        Hi,<a>云蚂蚁1234</a>
+          <span>退出</span>
       </div>
       <div class="h-right">
         <ul>
@@ -29,15 +29,14 @@ export default {
 <style lang="stylus" scoped>
   @import '~style/varible.styl'
   .wrapper
-      background:$bgColor
+      background-color:$bgColor
       height:30px
-      min-width:1440px
       .header
+          margin: 0 auto
           position:relative
           display:flex
           line-height:30px
-          min-width:1190px
-          margin:0 130px 0 120px
+          width:1190px
           font-size:12px
           font-family:PingFang-SC
           font-weight:Regular
@@ -45,10 +44,9 @@ export default {
           .h-left
               padding-left:6px
               padding-right:34px
-          .h-user span
+          .h-user a
               color:rgba(230,45,45,1)
-          .h-user p
-              display:inline-block
+          .h-user span
               float:right
               padding-left:10px
           .h-right
