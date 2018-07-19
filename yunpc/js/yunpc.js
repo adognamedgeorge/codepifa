@@ -1,9 +1,71 @@
-// var oR=$('.c-right');
-//
-// for (var i=0;i<8;i++){
-//     document.oR.innerHTML=document.oR.innerHTML+'<div>'+'</div>'
-// }
-// var aIco=$('.c-right div');
-// for( var i=0; i<4;i++) {
-//         aIco(i).style.left=10+230*i+'px';
-// }
+
+    var i=0;
+    var stop;
+    /*	每隔2秒运行一次轮播*/
+    stop=setInterval(function(){
+    i++;
+    if(i>4){
+    i=1;
+}
+
+    xiaoguo(i);
+},4000)
+
+    $('.list-li>li').eq(0).css({'background-color':'red'})
+    function xiaoguo(n){
+    var b=n-1;
+    $('.list-li>li').css({'background-color':'black'})
+    $('.list-li>li').eq(b).css({'background-color':'red'})
+    $('.dian').animate({'width':700+'px'},4000)
+    $('.dian').animate({'width':0+'px'},100)
+    $('.box2').animate({'margin-left':-n*700+'px'},4000,function(){
+    if(n==4){
+    $('.box2').css({'margin-left':0+'px'})
+}
+})
+}
+    /*	左右按钮*/
+    function huan(n){
+    var j=i;
+    i=i+n;
+
+    if(i>4){
+    i=1;
+}
+    if(i<0){
+    i=1;
+}
+    xiaoguo(i);
+}
+
+    /*	鼠标放上大块*/
+    $('.lunbo').mouseover(function(){
+    clearInterval(stop);
+    stop=null;
+    $('.btn').show();
+
+})
+    /*	鼠标离开大块*/
+    $('.lunbo').mouseout(function(){
+    if(stop==null){
+    stop=setInterval(function(){
+    i++;
+    if(i>4){
+    i=1;
+}
+    xiaoguo(i);
+},4000)
+}
+    $('.btn').hide();
+    $('.btn-con-l').text('');
+    $('.btn-con-r').text('');
+})
+    /*按钮小标题*/
+    $('.list-li>li').mouseover(function(){
+    clearInterval(stop);
+    stop=null;
+    i= Number($(this).text());
+    xiaoguo($(this).text())
+    $('.box').stop(true,true);
+    $('.dian').stop(true,true);
+})
