@@ -9,6 +9,7 @@ $color:rgba(255,255,255,1);
     font-weight:Regular;
     font-family:PingFang-SC;
     background-color:$bgColor;
+    overflow-x:hidden
   }
 
 
@@ -224,7 +225,23 @@ $color:rgba(255,255,255,1);
       }
       .list {
         background-color:$color;
-        height:330px;
+        height:324px;
+        padding-top:6px;
+        div {
+          height:36px;
+          line-height:36px;
+          a {
+            font-size:14px;
+            padding-right:12px;
+            color:rgba(153,153,153,1);
+          }
+          a:first-child {
+            display:inline-block;
+            width:56px;
+            color:rgba(51,51,51,1);
+            padding-left:20px;
+          }
+        }
       }
     }
 
@@ -257,8 +274,36 @@ $color:rgba(255,255,255,1);
     .ads {
         width:240px;
         height:320px;
-        border:$B;
         margin-top:10px;
+        background-color:$color;
+      .ad1 {
+        height:118px;
+        display:flex;
+        .ad1-img {
+            width:36px;
+            height:36px;
+            border-radius:50%;
+            margin:14px 10px 5px 10px;
+            background-color:rgba(224, 224, 224, 1);
+        }
+        .ad1-list {
+            height:55px;
+            flex:1;
+            background:red;
+            overflow:hidden;
+          button {
+            float:right;
+          }
+        }
+      }
+      .ad2 {
+        height:92px;
+        box-shadow:0 0 0 1px rgba(242,242,242,1);
+      }
+      .ad3 {
+        height:110px;
+        box-shadow:0 0 0 1px rgba(242,242,242,1);
+      }
     }
   }
 
@@ -272,7 +317,9 @@ $color:rgba(255,255,255,1);
       .sp-left {
         width:230px;
         height:300px;
-        border:$B;
+        img {
+          width:100%;
+        }
       }
       .sp-slid {
         height:300px;
@@ -285,24 +332,37 @@ $color:rgba(255,255,255,1);
       }
   }
 
-  .categories {
+  #categories {
+    margin-bottom:120px;
+    .categories {
       height:610px;
       border:$B;
       margin-bottom:30px;
       display:flex;
       .c-left {
+        width:230px;
+        height:610px;
+        background-color:#96D3FA;
+
+        .left-t {
           width:230px;
-          height:610px;
-          border:$B;
+          height:300px;
+        }
+
+        .left-b {
+          width:230px;
+          height:310px;
+          img {
+            width:100%;
+          }
+        }
       }
       .c-right {
-          flex:1;
-          border:$B;
-
-
-
+        flex:1;
+        border:$B;
 
       }
+  }
   }
 
 

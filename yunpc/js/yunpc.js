@@ -7,7 +7,6 @@
     if(i>4){
     i=1;
 }
-
     xiaoguo(i);
 },4000)
 
@@ -44,7 +43,7 @@
     stop=null;
     $('.btn').show();
 
-})
+});
     /*	鼠标离开大块*/
     $('.lunbo').mouseout(function(){
     if(stop==null){
@@ -59,13 +58,13 @@
     $('.btn').hide();
     $('.btn-con-l').text('');
     $('.btn-con-r').text('');
-})
+});
     /*按钮小标题*/
     $('.list-li>li').mouseover(function(){
     clearInterval(stop);
     stop=null;
     i= Number($(this).text());
-    xiaoguo($(this).text())
+    xiaoguo($(this).text());
     $('.box').stop(true,true);
     $('.dian').stop(true,true);
-})
+});
