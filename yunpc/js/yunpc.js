@@ -8,16 +8,16 @@
     i=1;
 }
     xiaoguo(i);
-},4000)
+},2000)
 
     $('.list-li>li').eq(0).css({'background-color':'red'})
     function xiaoguo(n){
     var b=n-1;
     $('.list-li>li').css({'background-color':'black'})
     $('.list-li>li').eq(b).css({'background-color':'red'})
-    $('.dian').animate({'width':700+'px'},4000)
+    $('.dian').animate({'width':700+'px'},6000)
     $('.dian').animate({'width':0+'px'},100)
-    $('.box2').animate({'margin-left':-n*700+'px'},4000,function(){
+    $('.box2').animate({'margin-left':-n*700+'px'},6000,function(){
     if(n==4){
     $('.box2').css({'margin-left':0+'px'})
 }
