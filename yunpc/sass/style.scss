@@ -391,8 +391,47 @@ $color:rgba(255,255,255,1);
       }
 
       .ad3 {
-        height: 110px;
+        height: 98px;
         box-shadow: 0 0 0 1px rgba(242, 242, 242, 1);
+        padding-top:12px;
+        padding-left:10px;
+        width:230px;
+        .ad-t {
+              height:20px;
+              line-height:20px;
+          h3 {
+            font-size:16px;
+            color:rgba(51,51,51,1);
+            display:inline-block;
+            margin-right:148px;
+          }
+          a {
+            display:inline-block;
+          }
+          .gengduo {
+            font-size:14px;
+            color:rgba(153,153,153,1);
+          }
+          .ad3-a {
+            width:16px;
+            height:16px;
+            background:url(../img/sprite.png) no-repeat;
+            background-position:-16px 0;
+            margin-bottom:-2px;
+          }
+        }
+
+        .ad-b {
+          height:70px;
+          padding-top:8px;
+          a {
+            font-size:12px;
+            color:rgba(102,102,102,1);
+          }
+            a:hover {
+              text-decoration:underline;
+            }
+        }
       }
     }
   }
