@@ -14,7 +14,7 @@ $color:rgba(255,255,255,1);
     position:relative;
     padding-top:20px;
     transition:all .6s ease-in-out 0s;
-    -webkit-transition:all .6s ease-in-out 0s;
+    -webkit-transition:all .5s ease-in-out 0s;
     .item-bg {
       display:inline-block;
       width:24px;
@@ -87,10 +87,11 @@ $color:rgba(255,255,255,1);
         display:inline-block;
         border:1px solid rgba(196,196,196,1);
         color:#666666;
-        font-size:8px;
+        font-size:16px;
         float:left;
         text-align:center;
         line-height:24px;
+        font-weight:bold;
       }
       input {
         width:38px;
@@ -111,10 +112,10 @@ $color:rgba(255,255,255,1);
         height:26px;
         line-height:24px;
         background:#E62D2D;
-        font-size:16px;
         color:$color;
         float:right;
         border:none;
+        font-weight:normal;
       }
     }
   }
@@ -571,12 +572,32 @@ $color:rgba(255,255,255,1);
       .sp-slid {
         height:300px;
         flex:1;
-        @extend %item;
-        .item-box {
-          box-shadow:-1px 0 0 0 $bgColor inset;
-          padding-left:5px;
-          padding-right:5px;
+        position:relative;
+        ul {
+          @extend %item;
+          .item-box {
+            box-shadow:-1px 0 0 0 $bgColor inset;
+            padding-left:5px;
+            padding-right:5px;
+          }
         }
+        .btn {
+          display:none;
+          position:absolute;
+          top:38.33%;
+          width:26px;
+          height:70px;
+          background-color:rgba(0,0,0,0.4);
+          z-index:6;
+          color:$color;
+          font-weight:bold;
+          line-height:70px;
+          text-align:center;
+        }
+        .fl {left:0;border-radius:0 4px 4px 0;
+            i {display:block;transform:rotate(180deg);-webkit-transform:rotate(180deg);}
+        }
+        .fr {right:0;border-radius:4px 0 0 4px;}
       }
 
       .sp-right {

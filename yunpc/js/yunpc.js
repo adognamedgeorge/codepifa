@@ -87,6 +87,17 @@ $(function(){
         });
     })();
     $(window).trigger('scroll');
+
+    (function(){
+        oBtn=$('.btn');
+        oSp=$('.sp-slid');
+        oSp.mouseover(function(){
+            oBtn.show();
+        });
+        oSp.mouseout(function(){
+            oBtn.hide();
+        });
+    })();
 });
 
 
