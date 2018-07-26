@@ -364,6 +364,7 @@ $color:rgba(255,255,255,1);
             padding-left: 20px;
           }
         }
+        div:hover {background-color:rgba(230,45,45,1);}
       }
     }
 
@@ -621,7 +622,7 @@ $color:rgba(255,255,255,1);
   }
 
   #categories {
-    margin-bottom:120px;
+    margin-bottom:50px;
     .category {
       height:610px;
       margin-bottom:30px;
@@ -696,6 +697,91 @@ $color:rgba(255,255,255,1);
         }
       }
   }
+  }
+
+  #line {
+    background-color:$color;
+    .line-img-box {
+      height:84px;
+      padding-top:8px;
+      padding-bottom:8px;
+      .line-img {
+          height:84px;
+          margin:0 auto;
+          img {
+            height:100%;
+          }
+      }
+    }
+  }
+
+  #footer {
+    height:120px;
+    padding-top:30px;
+    padding-bottom:30px;
+    overflow:hidden;
+    .footer-info {
+      display:inline-block;
+      .footer-tel {
+          font-size:20px;
+          color:rgba(51,51,51,1);
+          height:24px;
+          line-height:24px;
+          margin-bottom:20px;
+        i {
+          color:rgba(230,45,45,1);
+        }
+      }
+      .footer-link {
+        height:20px;
+        line-height:20px;
+        overflow:hidden;
+        margin-bottom:10px;
+        a {
+          font-size:16px;
+          display:inline-block;
+          padding-right:40px;
+          color:rgba(51,51,51,1);
+          float:left;
+        }
+        a:hover {
+          color:red;
+        }
+      }
+      .footer-add,.footer-copy {
+          height:18px;
+          line-height:18px;
+          font-size:14px;
+          color:rgba(153,153,153,1);
+          margin-bottom:10px;
+      }
+      .footer-copy span {
+          padding-left:30px;
+      }
+
+    }
+    .footer-login {
+      float:right;
+      display:inline-block;
+      a {
+        display:inline-block;
+        width:80px;
+        height:108px;
+        margin-left:20px;
+        font-size:14px;
+        color:rgba(153,153,153,1);
+        text-align:center;
+        img {
+          width:100%;
+          display:inline-block;
+        }
+        p {
+          padding-top:8px;
+          height:20px;
+          line-height:20px;
+        }
+      }
+    }
   }
 
 #scrollTop {
