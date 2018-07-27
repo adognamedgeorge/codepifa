@@ -2,7 +2,7 @@
 $(function(){
   // 轮播
     (function(){
-        var i=0;
+        var i=-1;
         var stop;
         /*	每隔2秒运行一次轮播*/
         stop=setInterval(function(){
@@ -26,19 +26,6 @@ $(function(){
                 }
             })
         }
-        /*	左右按钮*/
-        function huan(n){
-            var j=i;
-            i=i+n;
-
-            if(i>4){
-                i=1;
-            }
-            if(i<0){
-                i=1;
-            }
-            xiaoguo(i);
-        }
 
         // /*	鼠标放上大块*/
         // $('.lunbo').mouseover(function(){
@@ -60,14 +47,14 @@ $(function(){
         //     }
         // });
         /*按钮小标题*/
-        $('.list-li>li').mouseover(function(){
-            clearInterval(stop);
-            stop=null;
-            i= Number($(this).text());
-            xiaoguo($(this).text());
-            $('.box').stop(true,true);
-            $('.dian').stop(true,true);
-        });
+        // $('.list-li>li').mouseover(function(){
+        //     clearInterval(stop);
+        //     stop=null;
+        //     i= Number($(this).text());
+        //     xiaoguo($(this).text());
+        //     $('.box').stop(true,true);
+        //     $('.dian').stop(true,true);
+        // });
     })();
         //返回顶部
     (function(){
