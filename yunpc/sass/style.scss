@@ -191,6 +191,7 @@ $color:rgba(255,255,255,1);
         height: 76px;
         margin-top: 20px;
         display: flex;
+        display:-ms-flexbox;
         align-items: center;
         .logo-img {
           width: 90px;
@@ -333,10 +334,12 @@ $color:rgba(255,255,255,1);
     height: 330px;
     margin-bottom: 10px;
     display: flex;
+    display:-ms-flexbox;
     .mulu {
       width: 230px;
       height: 360px;
       margin-top: -30px;
+      position:relative;
       h2 {
         height: 30px;
         background: rgba(230, 45, 45, 1);
@@ -349,24 +352,48 @@ $color:rgba(255,255,255,1);
         background-color: $color;
         height: 324px;
         padding-top: 6px;
-        div {
-          height: 36px;
-          line-height: 36px;
-          a {
-            font-size: 14px;
-            padding-right: 12px;
-            color: rgba(153, 153, 153, 1);
+        ul li {
+          .list-a {
+            height: 36px;
+            line-height: 36px;
+            a {
+              font-size: 14px;
+              padding-right: 12px;
+              color: rgba(153, 153, 153, 1);
+            }
+            a:first-child {
+              display: inline-block;
+              width: 56px;
+              color: rgba(51, 51, 51, 1);
+              padding-left: 20px;
+            }
+            a:hover {
+              color: rgba(254, 229, 61, 1) !important;
+            }
           }
-          a:first-child {
-            display: inline-block;
-            width: 56px;
-            color: rgba(51, 51, 51, 1);
-            padding-left: 20px;
+          .list-a:hover {
+            background-color: rgba(230, 45, 45, 1);
+            a {
+              color: $color;
+            }
+          }
+          .mulu-hide {
+            background: red;
+            width: 250px;
+            height: 330px;
+            position: absolute;
+            left: 230px;
+            bottom: 0;
+            z-index: 5;
+            display: none;
           }
         }
-        div:hover {background-color:rgba(230,45,45,1);}
+        li:hover {
+          div+div {display:block;}
+        }
       }
     }
+
 
     .lunbo {
       width: 700px;
@@ -377,7 +404,7 @@ $color:rgba(255,255,255,1);
       background-size: 100% 100%;
       img {
         float: left;
-        width: 20%;
+        //width: 20%;
         height: 100%;
       }
 
@@ -413,6 +440,7 @@ $color:rgba(255,255,255,1);
       .ad1 {
         height: 63px;
         display: flex;
+        display:-ms-flexbox;
         .ad1-img {
           width: 36px;
           height: 36px;
@@ -423,6 +451,7 @@ $color:rgba(255,255,255,1);
         .ad1-text {
           height: 37px;
           flex: 1;
+          -ms-flex:1;
           color: rgba(153, 153, 153, 1);
           padding-top: 14px;
           padding-bottom: 4px;
@@ -448,6 +477,7 @@ $color:rgba(255,255,255,1);
         height: 42px;
         text-align: center;
         display: flex;
+        display:-ms-flexbox;
         justify-content: space-around;
         padding-bottom: 13px;
         li {
@@ -562,6 +592,7 @@ $color:rgba(255,255,255,1);
       height:300px;
       margin-bottom:30px;
       display:flex;
+      display:-ms-flexbox;
       .sp-left {
         width:230px;
         height:300px;
@@ -573,6 +604,7 @@ $color:rgba(255,255,255,1);
       .sp-slid {
         height:300px;
         flex:1;
+        -ms-flex:1;
         position:relative;
         ul {
           @extend %item;
@@ -599,6 +631,9 @@ $color:rgba(255,255,255,1);
             i {display:block;transform:rotate(180deg);-webkit-transform:rotate(180deg);}
         }
         .fr {right:0;border-radius:4px 0 0 4px;}
+      }
+      .sp-slid:hover {
+        .btn {display:block;}
       }
 
       .sp-right {
@@ -627,6 +662,7 @@ $color:rgba(255,255,255,1);
       height:610px;
       margin-bottom:30px;
       display:flex;
+      display:-ms-flexbox;
       .c-left {
         width:230px;
         height:610px;
@@ -690,6 +726,7 @@ $color:rgba(255,255,255,1);
       }
       .c-right {
         flex:1;
+        -ms-flex:1;
         @extend %item;
         .item-box {
           margin-left:10px;

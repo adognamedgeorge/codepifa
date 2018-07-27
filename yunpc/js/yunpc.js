@@ -40,28 +40,25 @@ $(function(){
             xiaoguo(i);
         }
 
-        /*	鼠标放上大块*/
-        $('.lunbo').mouseover(function(){
-            clearInterval(stop);
-            stop=null;
-            $('.btn').show();
-
-        });
-        /*	鼠标离开大块*/
-        $('.lunbo').mouseout(function(){
-            if(stop==null){
-                stop=setInterval(function(){
-                    i++;
-                    if(i>4){
-                        i=1;
-                    }
-                    xiaoguo(i);
-                },3000)
-            }
-            $('.btn').hide();
-            $('.btn-con-l').text('');
-            $('.btn-con-r').text('');
-        });
+        // /*	鼠标放上大块*/
+        // $('.lunbo').mouseover(function(){
+        //     clearInterval(stop);
+        //     stop=null;
+        //     $('.btn').show();
+        //
+        // });
+        // /*	鼠标离开大块*/
+        // $('.lunbo').mouseout(function(){
+        //     if(stop==null){
+        //         stop=setInterval(function(){
+        //             i++;
+        //             if(i>4){
+        //                 i=1;
+        //             }
+        //             xiaoguo(i);
+        //         },3000)
+        //     }
+        // });
         /*按钮小标题*/
         $('.list-li>li').mouseover(function(){
             clearInterval(stop);
@@ -88,16 +85,17 @@ $(function(){
     })();
     $(window).trigger('scroll');
 
-    (function(){
-        oBtn=$('.btn');
-        oSp=$('.sp-slid');
-        oSp.mouseover(function(){
-            oBtn.show();
-        });
-        oSp.mouseout(function(){
-            oBtn.hide();
-        });
-    })();
+// 按钮出现隐藏
+    // (function(){
+    //     oBtn=$('.btn');
+    //     oSp=$('.sp-slid');
+    //     oSp.mouseover(function(){
+    //         oBtn.show();
+    //     });
+    //     oSp.mouseout(function(){
+    //         oBtn.hide();
+    //     });
+    // })();
 });
 
 
