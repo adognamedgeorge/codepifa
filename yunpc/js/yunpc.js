@@ -2,8 +2,8 @@
 $(function(){
   // 轮播
     (function(){
-        var i=-1;
-        var stop;
+         i=-1;
+         stop;
         /*	每隔2秒运行一次轮播*/
         stop=setInterval(function(){
             i++;
@@ -15,7 +15,7 @@ $(function(){
 
         $('.list-li>li').eq(0).css({'background-color':'red'})
         function xiaoguo(n){
-            var b=n-1;
+            b=n-1;
             $('.list-li>li').css({'background-color':'black'})
             $('.list-li>li').eq(b).css({'background-color':'red'})
             $('.dian').animate({'width':700+'px'},3000)
@@ -27,34 +27,7 @@ $(function(){
             })
         }
 
-        // /*	鼠标放上大块*/
-        // $('.lunbo').mouseover(function(){
-        //     clearInterval(stop);
-        //     stop=null;
-        //     $('.btn').show();
-        //
-        // });
-        // /*	鼠标离开大块*/
-        // $('.lunbo').mouseout(function(){
-        //     if(stop==null){
-        //         stop=setInterval(function(){
-        //             i++;
-        //             if(i>4){
-        //                 i=1;
-        //             }
-        //             xiaoguo(i);
-        //         },3000)
-        //     }
-        // });
-        /*按钮小标题*/
-        // $('.list-li>li').mouseover(function(){
-        //     clearInterval(stop);
-        //     stop=null;
-        //     i= Number($(this).text());
-        //     xiaoguo($(this).text());
-        //     $('.box').stop(true,true);
-        //     $('.dian').stop(true,true);
-        // });
+
     })();
         //返回顶部
     (function(){
@@ -71,6 +44,9 @@ $(function(){
         });
     })();
     $(window).trigger('scroll');
+
+
+
 
 // 按钮出现隐藏
     // (function(){
