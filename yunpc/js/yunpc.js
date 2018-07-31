@@ -34,7 +34,7 @@ $(function(){
         //1.楼梯什么时候显示，800px scroll--->scrollTop
         $(window).on('scroll',function(){
             let $scroll=$(this).scrollTop();
-            if($scroll>=360){
+            if($scroll>=305){
                 $('#scrollTop').show();
             }else{
                 $('#scrollTop').hide();
@@ -42,7 +42,7 @@ $(function(){
 
             //4.拖动滚轮，对应的楼梯样式进行匹配
             $('.category').each(function(){
-                let $loutitop=$('.category').eq($(this).index()).offset().top-200;
+                let $loutitop=$('.category').eq($(this).index()).offset().top+215;
                 //console.log($loutitop);
                 if($loutitop>$scroll){//楼层的top大于滚动条的距离
                     $('#scrollTop li').removeClass('selected');

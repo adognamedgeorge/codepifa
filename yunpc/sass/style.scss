@@ -627,7 +627,12 @@ $color:rgba(255,255,255,1);
 
 
 
-  #special {
+
+
+  #categories {
+    margin-bottom:50px;
+
+    #special {
       height:300px;
       margin-bottom:30px;
       display:flex;
@@ -667,7 +672,7 @@ $color:rgba(255,255,255,1);
           text-align:center;
         }
         .fl {left:0;border-radius:0 4px 4px 0;
-            i {display:block;transform:rotate(180deg);-webkit-transform:rotate(180deg);}
+          i {display:block;transform:rotate(180deg);-webkit-transform:rotate(180deg);}
         }
         .fr {right:0;border-radius:4px 0 0 4px;}
       }
@@ -692,10 +697,8 @@ $color:rgba(255,255,255,1);
           background:url("../img/home_bg_yushou@2x.png") no-repeat;
         }
       }
-  }
+    }
 
-  #categories {
-    margin-bottom:50px;
     .category {
       height:610px;
       margin-bottom:30px;
