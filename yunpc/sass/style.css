@@ -120,14 +120,12 @@ body {
   font-weight: Regular;
   font-family: PingFang-SC;
   background-color: #f2f2f2;
-  overflow-x: hidden;
-  min-width: 1190px; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003140}}
-.wrapper {
-  background-color: inherit;
-  width: 1190px;
-  margin: 0 auto; }
+  overflow-x: hidden; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003136}}
+  body .wrapper {
+    background-color: inherit;
+    width: 1190px;
+    margin: 0 auto; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003147}}
 #header {
@@ -652,53 +650,58 @@ body {
       height: 60px;
       background: url("../img/home_bg_yushou@2x.png") no-repeat; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003698}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003697}}
 #categories {
   margin-bottom: 50px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003700}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003699}}
   #categories .category {
     height: 610px;
     margin-bottom: 30px;
     display: flex;
     display: -ms-flexbox; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003705}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003704}}
     #categories .category .c-left {
       width: 230px;
       height: 610px;
       background-color: #96D3FA; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003709}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003708}}
       #categories .category .c-left .left-t {
         width: 210px;
         height: 264px;
         padding-top: 36px;
         padding-left: 20px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003714}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003713}}
         #categories .category .c-left .left-t .ca-title {
           height: 44px;
           padding-right: 20px;
           width: 190px;
-          line-height: 44px; }
+          line-height: 44px;
+          overflow: hidden; }
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003719}}
           #categories .category .c-left .left-t .ca-title a {
             color: white;
             font-family: PingFang-SC-Medium;
-            font-size: 36px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003724}}
-          #categories .category .c-left .left-t .ca-title .i-bg {
+            font-size: 36px;
             display: inline-block;
-            width: 32px;
-            height: 32px;
-            background: url("../img/sprite.png") no-repeat;
-            background-position: -81px 0;
-            margin-left: 10px;
-            margin-bottom: -3px;
-            text-align: center; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003735}}
+            height: 44px;
+            line-height: 44px;
+            width: 185px;
+            overflow: hidden; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003728}}
+            #categories .category .c-left .left-t .ca-title a .i-bg {
+              display: inline-block;
+              width: 32px;
+              height: 32px;
+              background: url("../img/sprite.png") no-repeat;
+              background-position: -81px 0;
+              float: right;
+              margin-top: 7px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003740}}
         #categories .category .c-left .left-t .ca-list {
           overflow: hidden;
           height: 204px;
           padding-top: 16px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003739}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003744}}
           #categories .category .c-left .left-t .ca-list li {
             float: left;
             display: inline-block;
@@ -710,92 +713,92 @@ body {
             line-height: 50px;
             margin-right: 20px;
             margin-bottom: 20px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003750}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003755}}
             #categories .category .c-left .left-t .ca-list li a {
               font-size: 12px;
               color: #666666; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003758}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003763}}
       #categories .category .c-left .left-b {
         width: 230px;
         height: 310px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003761}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003766}}
         #categories .category .c-left .left-b img {
           width: 100%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003766}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003771}}
     #categories .category .c-right {
       flex: 1;
       -ms-flex: 1; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003770}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003775}}
       #categories .category .c-right .item-box {
         margin-left: 10px;
         margin-bottom: 10px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003778}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003783}}
 #line {
   background-color: white; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003780}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003785}}
   #line .line-img-box {
     height: 84px;
     padding-top: 8px;
     padding-bottom: 8px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003784}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003789}}
     #line .line-img-box .line-img {
       height: 84px;
       margin: 0 auto; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003787}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003792}}
       #line .line-img-box .line-img img {
         height: 100%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003794}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003799}}
 #footer {
   height: 120px;
   padding-top: 30px;
   padding-bottom: 30px;
   overflow: hidden; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003799}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003804}}
   #footer .footer-info {
     display: inline-block; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003801}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003806}}
     #footer .footer-info .footer-tel {
       font-size: 20px;
       color: #333333;
       height: 24px;
       line-height: 24px;
       margin-bottom: 20px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003807}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003812}}
       #footer .footer-info .footer-tel i {
         color: #e62d2d; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003811}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003816}}
     #footer .footer-info .footer-link {
       height: 20px;
       line-height: 20px;
       overflow: hidden;
       margin-bottom: 10px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003816}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003821}}
       #footer .footer-info .footer-link a {
         font-size: 16px;
         display: inline-block;
         padding-right: 40px;
         color: #333333;
         float: left; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003823}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003828}}
       #footer .footer-info .footer-link a:hover {
         color: red; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003827}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003832}}
     #footer .footer-info .footer-add, #footer .footer-info .footer-copy {
       height: 18px;
       line-height: 18px;
       font-size: 14px;
       color: #999999;
       margin-bottom: 10px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003834}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003839}}
     #footer .footer-info .footer-copy span {
       padding-left: 30px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003839}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003844}}
   #footer .footer-login {
     float: right;
     display: inline-block; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003842}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003847}}
     #footer .footer-login a {
       display: inline-block;
       width: 80px;
@@ -804,17 +807,17 @@ body {
       font-size: 14px;
       color: #999999;
       text-align: center; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003850}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003855}}
       #footer .footer-login a img {
         width: 100%;
         display: inline-block; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003854}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003859}}
       #footer .footer-login a p {
         padding-top: 8px;
         height: 20px;
         line-height: 20px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003863}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003868}}
 #scrollTop {
   position: fixed;
   top: 130px;
@@ -824,7 +827,7 @@ body {
   margin-left: -677px;
   background-color: #F2F2F2;
   z-index: 7; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003872}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003877}}
   #scrollTop .scr-li {
     height: 30px;
     width: 80px;
@@ -832,56 +835,56 @@ body {
     line-height: 30px;
     text-align: center;
     margin-bottom: 2px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003879}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003884}}
     #scrollTop .scr-li a {
       font-size: 14px;
       color: white; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003883}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003888}}
     #scrollTop .scr-li i {
       font-size: 11px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003888}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003893}}
   #scrollTop .selected {
     background-color: #e62d2d; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003891}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003896}}
   #scrollTop .toTop {
     background-color: rgba(0, 0, 0, 0.2); }
 
 /*鏍峰紡閲嶇疆-reset*/
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003902}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003907}}
 body, h1, h2, h3, p, dl, dd, ul, ol, form, input, textarea, th, td, select {
   margin: 0;
   padding: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003906}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003911}}
 em, i {
   font-style: normal; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003909}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003914}}
 li {
   list-style: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003912}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003917}}
 a {
   text-decoration: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003915}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003920}}
 a.active {
   color: #e62d2d; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003918}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003923}}
 img {
   border: none;
   vertical-align: top; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003922}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003927}}
 table {
   border-collapse: collapse; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003925}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003930}}
 input, textarea {
   outline: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003928}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003933}}
 textarea {
   resize: none;
   overflow: auto; }

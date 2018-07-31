@@ -133,15 +133,15 @@ $color:rgba(255,255,255,1);
     font-family: PingFang-SC;
     background-color: $bgColor;
     overflow-x: hidden;
-    min-width:1190px;
+    .wrapper {
+      background-color:inherit;
+      width:$width;
+      margin:0 auto;
+    }
   }
 
 
-  .wrapper {
-    background-color:inherit;
-    width:$width;
-    margin:0 auto;
-  }
+
 
 
   #header {
@@ -692,7 +692,6 @@ $color:rgba(255,255,255,1);
           background:url("../img/home_bg_yushou@2x.png") no-repeat;
         }
       }
-
   }
 
   #categories {
@@ -716,21 +715,27 @@ $color:rgba(255,255,255,1);
             padding-right:20px;
             width:190px;
             line-height:44px;
+            overflow:hidden;
             a {
               color:$color;
               font-family:PingFang-SC-Medium;
               font-size:36px;
-            }
-            .i-bg {
               display:inline-block;
-              width:32px;
-              height:32px;
-              background:url("../img/sprite.png") no-repeat;
-              background-position:-81px 0;
-              margin-left:10px;
-              margin-bottom:-3px;
-              text-align:center;
+              height:44px;
+              line-height:44px;
+              width:185px;
+              overflow:hidden;
+              .i-bg {
+                display:inline-block;
+                width:32px;
+                height:32px;
+                background:url("../img/sprite.png") no-repeat;
+                background-position:-81px 0;
+                float:right;
+                margin-top:7px;
+              }
             }
+
           }
           .ca-list {
               overflow:hidden;
