@@ -297,16 +297,23 @@ $color:rgba(255,255,255,1);
           transform:rotate(180deg);
           -webkit-transform:rotate(180deg);
            +div {
-            display:block;
+            max-height:276px;
           }
         }
 
         .cart-hide {
           width:240px;
-          height:200px;
+          max-height:0;
           background:$color;
           box-shadow:0 2px 8px 0 rgba(0,0,0,0.1);
-          display:none;
+          z-index:100;
+          overflow:hidden;
+          transition:max-height .9s linear;
+          -webkit-transition:max-height .9s linear;
+          -moz-transition:max-height .9s linear;
+        }
+        .cart-hide:hover {
+          max-height:276px;
         }
       }
 
