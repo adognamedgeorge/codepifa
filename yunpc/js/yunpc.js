@@ -2,8 +2,8 @@
 $(function(){
   // 轮播
     (function(){
-         i=-1;
-         stop;
+         let i=-1;
+         let stop;
         /*	每隔2秒运行一次轮播*/
         stop=setInterval(function(){
             i++;
@@ -30,20 +30,85 @@ $(function(){
 
     })();
         //返回顶部
-    (function(){
-         backButton=$('.scr-bg2');
-         oDiv=$('#scrollTop');
-        backButton.on('click',function(){
-            $('html,body').animate({scrollTop:0},800)
-        });
+    $(function(){
+        //1.楼梯什么时候显示，800px scroll--->scrollTop
         $(window).on('scroll',function(){
-            if($(window).scrollTop()>360)
-                oDiv.fadeIn();
-            else
-                oDiv.fadeOut();
+            var $scroll=$(this).scrollTop();
+            if($scroll>=360){
+                $('#scrollTop').show();
+            }else{
+                $('#scrollTop').hide();
+            }
+
+            //4.拖动滚轮，对应的楼梯样式进行匹配
+            $('.category').each(function(){
+                var $loutitop=$('.category').eq($(this).index()).offset().top+400;
+                //console.log($loutitop);
+                if($loutitop>$scroll){//楼层的top大于滚动条的距离
+                    $('#scrollTop li').removeClass('selected');
+                    $('#scrollTop li').eq($(this).index()).addClass('selected');
+                    return false;//中断循环
+                }
+            });
         });
-    })();
-    $(window).trigger('scroll');
+        //2.获取每个楼梯的offset().top,点击楼梯让对应的内容模块移动到对应的位置  offset().left
+
+        var $loutili=$('#scrollTop li').not('.toTop');
+        $loutili.on('click',function(){
+            $(this).addClass('selected').siblings('li').removeClass('selected');
+            var $loutitop=$('.louti').eq($(this).index()).offset().top;
+            //获取每个楼梯的offsetTop值
+            $('html,body').animate({//$('html,body')兼容问题body属于chrome
+                scrollTop:$loutitop
+            })
+        });
+        //3.回到顶部
+        $('.toTop').on('click',function(){
+            $('html,body').animate({//$('html,body')兼容问题body属于chrome
+                scrollTop:0
+            })
+        });
+
+
+
+
+    })
+
+    // (function(){
+    //      let backButton=$('.scr-bg2');
+    //      let oDiv=$('#scrollTop');
+    //     backButton.on('click',function(){
+    //         $('html,body').animate({scrollTop:0},800)
+    //     });
+    //     $(window).on('scroll',function(){
+    //         if($(window).scrollTop()>360)
+    //         oDiv.fadeIn();
+    //         else
+    //         oDiv.fadeOut();
+    //
+    //     });
+    // })();
+    // $(window).trigger('scroll');
+
+
+
+
+
+       // for(i=0;i<len;i++){
+       //      aItembg[i].onOff=true;
+       //      aItembg[i].on('click',function(){
+       //         if(this.onOff){
+       //             this.addClass("cover");
+       //             this.onOff=false;
+       //         }else {
+       //             this.removeClass("cover");
+       //             this.onOff=true;
+       //         }
+       //      });
+       //  }
+
+
+
 
 
 
