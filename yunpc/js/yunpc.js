@@ -2,13 +2,14 @@
 $(function(){
   // 轮播
     (function(){
-         let i=-1;
+         let i=0;
          let stop;
+         let len=$('.box2>a').length;
         /*	每隔2秒运行一次轮播*/
         stop=setInterval(function(){
             i++;
-            if(i>4){
-                i=1;
+            if(i>len){
+                i=0;
             }
             xiaoguo(i);
         },8000);
@@ -22,7 +23,7 @@ $(function(){
             aLi.eq(b).css({'background-color':'red'});
 
             Box.animate({'margin-left':-n*700+'px'},3000,function(){
-                if(n==4){
+                if(n=len){
                     Box.css({'margin-left':0+'px'})
                 }
             });
