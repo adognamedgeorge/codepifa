@@ -576,11 +576,22 @@ $color:rgba(255,255,255,1);
       overflow: hidden;
       position: relative;
       background-size: 100% 100%;
-      img {
-        float: left;
-        width: 20%;
-        height: 100%;
+      .lunbo-img {
+        position:absolute;
+        top:0;
+        left:0;
+        li {
+          float:left;
+          width:700px;
+          height:320px;
+          img {
+            width: 100%;
+            height:100%;
+
+          }
+        }
       }
+
 
       .list-li {
         position: absolute;
@@ -592,17 +603,18 @@ $color:rgba(255,255,255,1);
         width: 20px;
         height: 20px;
         background-color: rgba(0, 0, 0, 0.8);
+        opacity:.8;
+        filter:Alpha(opacity=80);
         line-height: 20px;
         text-align: center;
         border-radius: 50%;
         margin-right: 10px;
         color: #fff;
         font-size: 14px;
+        cursor:pointer;
       }
-
-      .box2 {
-        width: 3500px;
-        height: 320px;
+      .list-li .active {
+        background-color:rgba(230,45,45,1);
       }
     }
 

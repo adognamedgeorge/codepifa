@@ -1,38 +1,65 @@
 
 $(function(){
-  // 轮播
+
     (function(){
          let i=0;
-         let stop;
-         let len=$('.box2>a').length;
-        /*	每隔2秒运行一次轮播*/
-        stop=setInterval(function(){
-            i++;
-            if(i>len){
-                i=0;
-            }
-            xiaoguo(i);
-        },8000);
 
-        let aLi=$('.list-li>li');
-        Box=$('.box2');
-        aLi.eq(0).css({'background-color':'red'});
-        function xiaoguo(n){
-            b=n-1;
-            aLi.css({'background-color':'black'});
-            aLi.eq(b).css({'background-color':'red'});
-
-            Box.animate({'margin-left':-n*700+'px'},3000,function(){
-                if(n=len){
-                    Box.css({'margin-left':0+'px'})
-                }
-            });
+        for(j=0;j<$(".lunbo-img li").length;j++){
+            $(".list-li").append('<li></li>');
+            $(".list-li li").eq(j).html(j+1);
         }
+        $(".list-li li").first().addClass('active');
+
+        let firstimg=$('.lunbo-img li').first().clone(); //复制第一张图片
+        $('.lunbo-img').append(firstimg).width($('.lunbo-img li').length*($('.lunbo-img img').width()));
+        timer=setInterval(function(){
+            i++;
+            if (i==$('.lunbo-img li').length) {
+                i=1;
+                $('.lunbo-img').css({left:0});//保证无缝轮播，设置left值
+            }
+
+            $('.lunbo-img').stop().animate({left:-i*700},2000);
+        },6000);
 
 
     })();
+
+  // 轮播
+  //   (function(){
+  //        let i=0;
+  //        let stop;
+  //        let len=$('.box2>a').length;
+  //       /*	每隔2秒运行一次轮播*/
+  //       stop=setInterval(function(){
+  //           i++;//1234
+  //           if(i>len){
+  //               i=0;
+  //           }
+  //           xiaoguo(i);
+  //
+  //       },3000);
+  //
+  //       let aLi=$('.list-li>li');
+  //       Box=$('.box2');
+  //       aLi.eq(i).css({'background-color':'red'});
+  //       function xiaoguo(n){
+  //           b=n;
+  //           aLi.css({'background-color':'black'});
+  //           aLi.eq(b).css({'background-color':'red'});
+  //
+  //           Box.animate({'margin-left':-n*700+'px'},3000,function(){
+  //               if(n==len-1){
+  //                   Box.css({'margin-left':0+'px'})
+  //               }
+  //           });
+  //       }
+  //
+  //
+  //   })();
         //返回顶部
-    $(function(){
+
+    (function(){
         //1.楼梯什么时候显示，800px scroll--->scrollTop
         $(window).on('scroll',function(){
             let $scroll=$(this).scrollTop();
@@ -60,7 +87,7 @@ $(function(){
                 scrollTop:0
             })
         });
-    })
+    })();
 
 
 });
