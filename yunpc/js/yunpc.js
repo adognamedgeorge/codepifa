@@ -3,23 +3,30 @@ $(function(){
 
     (function(){
          let i=0;
-
-        for(j=0;j<$(".lunbo-img li").length;j++){
-            $(".list-li").append('<li></li>');
+         let aImgli=$('.lunbo-img li');
+         let len=aImgli.length;
+        for(j=0;j<aImgli.length;j++){
+            $(".list-li").append('<li> </li>');
             $(".list-li li").eq(j).html(j+1);
         }
         $(".list-li li").first().addClass('active');
 
-        let firstimg=$('.lunbo-img li').first().clone(); //复制第一张图片
-        $('.lunbo-img').append(firstimg).width($('.lunbo-img li').length*($('.lunbo-img img').width()));
+        let firstimg=aImgli.first().clone(); //复制第一张图片
+        $('.lunbo-img').append(firstimg).width(aImgli.length*($('.lunbo-img img').width()));
         timer=setInterval(function(){
             i++;
-            if (i==$('.lunbo-img li').length) {
-                i=1;
+            if (i===len) {
+                i=0;
                 $('.lunbo-img').css({left:0});//保证无缝轮播，设置left值
             }
 
             $('.lunbo-img').stop().animate({left:-i*700},2000);
+
+            if(i===len){
+                $('.list-li li').eq(0).addClass('active').siblings().removeClass('active');
+            }else {
+                $('.list-li li').eq(i).addClass('active').siblings().removeClass('active');
+            }
         },6000);
 
 
