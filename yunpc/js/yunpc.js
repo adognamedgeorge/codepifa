@@ -1,6 +1,6 @@
 
 $(function(){
-
+ //轮播
     (function(){
          let i=0;
          let aImgli=$('.lunbo-img li');
@@ -29,43 +29,39 @@ $(function(){
             }
         },6000);
 
+        //鼠标移入，暂停自动播放，移出，开始自动播放
+        $('.lunbo').hover(function(){
+            clearInterval(timer);
+        },function(){
+            timer=setInterval(function(){
+                i++;
+                if (i===len) {
+                    i=0;
+                    $('.lunbo-img').css({left:0});
+                }
+                //进行下一张图片
+                $('.lunbo-img').stop().animate({left:-i*700},2000);
+                //圆点跟着变化
+                if (i===len) {
+                    $('.list-li li').eq(0).addClass('active').siblings().removeClass('active');
+                }else{
+                    $('.list-li li').eq(i).addClass('active').siblings().removeClass('active');
+                }
+            },6000)
+        });
 
-    })();
+        $('.list-li li').mouseover(function(){
+            let _index=$(this).index();
+            //维持i变量控制的对应关系不变
+            i = _index;
+            $('.lunbo-img').stop().animate({left:-_index*700},300);
+            $('.list-li li').eq(_index).addClass('active').siblings().removeClass('active');
+        });
 
-  // 轮播
-  //   (function(){
-  //        let i=0;
-  //        let stop;
-  //        let len=$('.box2>a').length;
-  //       /*	每隔2秒运行一次轮播*/
-  //       stop=setInterval(function(){
-  //           i++;//1234
-  //           if(i>len){
-  //               i=0;
-  //           }
-  //           xiaoguo(i);
-  //
-  //       },3000);
-  //
-  //       let aLi=$('.list-li>li');
-  //       Box=$('.box2');
-  //       aLi.eq(i).css({'background-color':'red'});
-  //       function xiaoguo(n){
-  //           b=n;
-  //           aLi.css({'background-color':'black'});
-  //           aLi.eq(b).css({'background-color':'red'});
-  //
-  //           Box.animate({'margin-left':-n*700+'px'},3000,function(){
-  //               if(n==len-1){
-  //                   Box.css({'margin-left':0+'px'})
-  //               }
-  //           });
-  //       }
-  //
-  //
-  //   })();
-        //返回顶部
+})();
 
+
+    //侧栏
     (function(){
         //1.楼梯什么时候显示，800px scroll--->scrollTop
         $(window).on('scroll',function(){
@@ -105,7 +101,39 @@ $(function(){
 
 
 
-
+// 轮播
+//   (function(){
+//        let i=0;
+//        let stop;
+//        let len=$('.box2>a').length;
+//       /*	每隔2秒运行一次轮播*/
+//       stop=setInterval(function(){
+//           i++;//1234
+//           if(i>len){
+//               i=0;
+//           }
+//           xiaoguo(i);
+//
+//       },3000);
+//
+//       let aLi=$('.list-li>li');
+//       Box=$('.box2');
+//       aLi.eq(i).css({'background-color':'red'});
+//       function xiaoguo(n){
+//           b=n;
+//           aLi.css({'background-color':'black'});
+//           aLi.eq(b).css({'background-color':'red'});
+//
+//           Box.animate({'margin-left':-n*700+'px'},3000,function(){
+//               if(n==len-1){
+//                   Box.css({'margin-left':0+'px'})
+//               }
+//           });
+//       }
+//
+//
+//   })();
+//返回顶部
 
 // (function(){
 //      let backButton=$('.scr-bg2');
