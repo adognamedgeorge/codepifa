@@ -438,7 +438,8 @@ body {
   #search .bar {
     height: 30px;
     line-height: 30px;
-    font-size: 16px; }
+    font-size: 16px;
+    overflow: hidden; }
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/style\.scss}line{font-family:\00003480}}
     #search .bar h2 {
       height: 30px;
