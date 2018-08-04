@@ -185,7 +185,7 @@ $color:rgba(255,255,255,1);
     .box {
       height: 150px;
       margin: 0 auto;
-      margin-bottom: -25px;
+      margin-bottom: -30px;
       display: flex;
       display:-ms-flexbox;
       .logo {
@@ -470,18 +470,31 @@ $color:rgba(255,255,255,1);
     }
 
     .bar {
-      width: $width;
-      padding-left: 230px;
-      padding-right: 256px;
-      height: 20px;
-      line-height: 20px;
+      //width: $width;
+      //padding-left: 230px;
+      //padding-right: 256px;
+      height: 30px;
+      line-height: 30px;
       font-size: 16px;
 
+      h2 {
+        height: 30px;
+        background: rgba(230, 45, 45, 1);
+        font-size: 16px;
+        line-height: 30px;
+        color: $color;
+        text-align: center;
+        display:inline-block;
+        width:230px;
+        float:left;
+      }
+
       ul {
-        letter-spacing: -8px;
+        //letter-spacing: -8px;
+        display:inline-block;
         li {
-          letter-spacing: normal;
-          display: inline-block;
+          //letter-spacing: normal;
+          float:left;
           padding-left: 30px;
           a {
             color: rgba(51, 51, 51, 1);
@@ -493,6 +506,7 @@ $color:rgba(255,255,255,1);
         }
       }
     }
+
   }
 
   #slider {
@@ -502,17 +516,17 @@ $color:rgba(255,255,255,1);
     display:-ms-flexbox;
     .mulu {
       width: 230px;
-      height: 360px;
-      margin-top: -30px;
+      height: 330px;
+      //margin-top: -30px;
       position:relative;
-      h2 {
-        height: 30px;
-        background: rgba(230, 45, 45, 1);
-        font-size: 16px;
-        line-height: 30px;
-        color: $color;
-        text-align: center;
-      }
+      //h2 {
+      //  height: 30px;
+      //  background: rgba(230, 45, 45, 1);
+      //  font-size: 16px;
+      //  line-height: 30px;
+      //  color: $color;
+      //  text-align: center;
+      //}
       .list {
         background-color: $color;
         height: 324px;
@@ -622,7 +636,7 @@ $color:rgba(255,255,255,1);
         margin-right: 10px;
         color: #fff;
         font-size: 14px;
-        cursor:pointer;
+        cursor:crosshair;
       }
       .list-li .active {
         background-color:rgba(230,45,45,1);
@@ -915,8 +929,8 @@ $color:rgba(255,255,255,1);
                 a {
                   font-size:12px;
                   color:rgba(102,102,102,1);
-                  width:50px;
-                  height:50px;
+                  width:inherit;
+                  height:inherit;
                   vertical-align:middle;
                   display:table-cell;
                   padding-left:7px;
