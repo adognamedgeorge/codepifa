@@ -133,16 +133,19 @@ $color:rgba(255,255,255,1);
     text-align:center;
     background-color:#F5F5F5;
   }
-  a {
-    color:rgba(51,51,51,1);
-    display:block;
-    width:70px;
-    padding-left:30px;
-    float:left;
+  div {
+    a {
+      color:rgba(51,51,51,1);
+      display:inline-block;
+      width:70px;
+      padding-left:30px;
+      float:left;
+    }
+    a:hover {
+      color:rgba(230,45,45,1);
+    }
   }
-  a:hover {
-    color:rgba(230,45,45,1);
-  }
+
 }
 
 #search-main {
@@ -185,21 +188,33 @@ $color:rgba(255,255,255,1);
       border:1px solid rgba(230,230,230,1);
       border-top:none;
       font-size:14px;
-      min-height:92px;
       overflow:hidden;
+      margin-bottom:30px;
       @extend %ha;
       h3 {
         line-height:40px;
       }
       div {
-        padding-top:3px;
-        padding-bottom:3px;
+        padding-top:7px;
+        padding-bottom:7px;
         width:1030px;
-        line-height:34px;
         float:left;
+        line-height:26px;
+        background-color:$color;
       }
-
+      .sm-more {
+        padding-top:10px;
+        display:inline-block;
+        color:rgba(153,153,153,1);
+        font-size:14px;
+      }
   }
+  .sm-height {
+    height:92px;
+  }
+
+
+
   .search-item-box {
     ul {
       @extend %item;
