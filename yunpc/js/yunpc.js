@@ -2,16 +2,16 @@
 $(function(){
  //轮播
     (function(){
-         let i=0;
-         let aImgli=$('.lunbo-img li');
-         let len=aImgli.length;
+         i=0;
+         aImgli=$('.lunbo-img li');
+         len=aImgli.length;
         for(j=0;j<aImgli.length;j++){
             $(".list-li").append('<li> </li>');
             $(".list-li li").eq(j).html(j+1);
         }
         $(".list-li li").first().addClass('active');
 
-        let firstimg=aImgli.first().clone(); //复制第一张图片
+        firstimg=aImgli.first().clone(); //复制第一张图片
         $('.lunbo-img').append(firstimg).width(aImgli.length*($('.lunbo-img img').width()));
         timer=setInterval(function(){
             i++;
@@ -65,7 +65,7 @@ $(function(){
     (function(){
         //1.楼梯什么时候显示，800px scroll--->scrollTop
         $(window).on('scroll',function(){
-            let $scroll=$(this).scrollTop();
+            $scroll=$(this).scrollTop();
             if($scroll>=305){
                 $('#scrollTop').show();
             }else{

@@ -1070,6 +1070,11 @@ $color:rgba(255,255,255,1);
 
     }
   }
+  .scr-li:hover {
+      background-color:rgba(230,45,45,1);
+      opacity:.7;
+      filter:Alpha(opacity=70);
+  }
   .selected {
     background-color:rgba(230,45,45,1);
   }

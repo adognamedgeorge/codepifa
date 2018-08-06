@@ -119,15 +119,79 @@
   -webkit-transform: scale(1.03);
   box-shadow: 0.4px 1.2px 2px grey; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/search\.scss}line{font-family:\00003128}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/search\.scss}line{font-family:\00003129}}
+#search-main .sm-leimu h3, #search-main .sm-brand h3 {
+  float: left;
+  color: #999999;
+  width: 80px;
+  text-align: center;
+  background-color: #F5F5F5; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/search\.scss}line{font-family:\00003136}}
+#search-main .sm-leimu a, #search-main .sm-brand a {
+  color: #333333;
+  display: block;
+  width: 70px;
+  padding-left: 30px;
+  float: left; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/search\.scss}line{font-family:\00003143}}
+#search-main .sm-leimu a:hover, #search-main .sm-brand a:hover {
+  color: #e62d2d; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/search\.scss}line{font-family:\00003148}}
 #search-main {
   background-color: white;
-  height: 1589px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/search\.scss}line{font-family:\00003134}}
+  min-height: 1589px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/search\.scss}line{font-family:\00003152}}
+  #search-main .sm-title {
+    height: 18px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    line-height: 18px;
+    font-size: 14px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/search\.scss}line{font-family:\00003158}}
+    #search-main .sm-title a {
+      color: #999999;
+      float: left; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/search\.scss}line{font-family:\00003162}}
+    #search-main .sm-title a:hover {
+      color: #e62d2d; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/search\.scss}line{font-family:\00003165}}
+    #search-main .sm-title span {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      background: url("../img/sprite.png") no-repeat;
+      background-position: -16px 0;
+      float: left;
+      margin-top: 1px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/search\.scss}line{font-family:\00003176}}
+  #search-main .sm-leimu {
+    height: 40px;
+    border: 1px solid #e6e6e6;
+    line-height: 40px;
+    font-size: 14px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/search\.scss}line{font-family:\00003184}}
+  #search-main .sm-brand {
+    border: 1px solid #e6e6e6;
+    border-top: none;
+    font-size: 14px;
+    min-height: 92px;
+    overflow: hidden; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/search\.scss}line{font-family:\00003191}}
+    #search-main .sm-brand h3 {
+      line-height: 40px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/search\.scss}line{font-family:\00003194}}
+    #search-main .sm-brand div {
+      padding-top: 3px;
+      padding-bottom: 3px;
+      width: 1030px;
+      line-height: 34px;
+      float: left; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/search\.scss}line{font-family:\00003206}}
   #search-main .search-item-box ul .item-box {
     margin-bottom: 10px;
     margin-left: 10px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/search\.scss}line{font-family:\00003138}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/yunpc\/sass\/search\.scss}line{font-family:\00003210}}
   #search-main .search-item-box ul .item-box:nth-child(5n+1) {
     margin-left: 0; }
 
