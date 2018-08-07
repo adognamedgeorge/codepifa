@@ -93,6 +93,22 @@ $(function(){
     })();
     $(window).trigger('scroll');
 
+
+    //品牌overflowhidden
+    (function(){
+        $Brand=$(".sm-brand");
+        $Morebg=$(".sm-more-bg");
+        $Smore=$(".sm-more");
+        $Smore.on('click',function(){
+            $Brand.hasClass("sm-height")?$Brand.removeClass("sm-height")&&$Smore.html("收起"):$Brand.addClass("sm-height")&&$Smore.html("更多");
+            $Morebg.hasClass("sm-more-hover")?$Morebg.removeClass("sm-more-hover"):$Morebg.addClass("sm-more-hover");
+
+        });
+
+        $(".sm-brand h3").height($(".sm-brand div").outerHeight());
+
+    })();
+
 });
 
 
