@@ -3,6 +3,7 @@ $width:1190px;
 $font:12px;
 $B:1px solid black;
 $color:rgba(255,255,255,1);
+$Sprite:url("../img/sprite.png") no-repeat;
 
 %item {
   .item-box {
@@ -22,13 +23,13 @@ $color:rgba(255,255,255,1);
       position:absolute;
       top:10px;
       right:10px;
-      background:url("../img/sprite.png") no-repeat;
-      background-position:-296px 0;
+      background:$Sprite;
+      background-position:-297px 0;
     }
 
     .cover {
-      background:url('../img/sprite.png') no-repeat;
-      background-position:-56px 0;
+      background:$Sprite;
+      background-position:-59px 0;
     }
 
     .item-img {
@@ -277,7 +278,7 @@ $color:rgba(255,255,255,1);
         }
 
         .cart-bg1 {
-          background: url(../img/sprite.png) no-repeat;
+          background: $Sprite;
           background-position: -32px 0;
           width: 24px;
           height: 24px;
@@ -288,7 +289,7 @@ $color:rgba(255,255,255,1);
         .cart-bg2 {
           width: 16px;
           height: 16px;
-          background: url(../img/sprite.png) no-repeat;
+          background:$Sprite;
           background-position: 0 0;
           position: absolute;
           top: 13px;
@@ -722,7 +723,7 @@ $color:rgba(255,255,255,1);
             padding:0 14px 0 14px;
             float:left;
             a {
-              background:url(../img/sprite.png) no-repeat;
+              background:$Sprite;
               display:block;
               width:48px;
               padding-top:44px;
@@ -771,7 +772,7 @@ $color:rgba(255,255,255,1);
               display:inline-block;
               width:16px;
               height:16px;
-              background:url(../img/sprite.png) no-repeat;
+              background:$Sprite;
               background-position:-16px 0;
               margin-bottom:-3px;
             }
@@ -904,8 +905,8 @@ $color:rgba(255,255,255,1);
                 display:inline-block;
                 width:32px;
                 height:32px;
-                background:url("../img/sprite.png") no-repeat;
-                background-position:-81px 0;
+                background:$Sprite;
+                background-position:-84px 0;
                 float:right;
                 margin-top:7px;
               }

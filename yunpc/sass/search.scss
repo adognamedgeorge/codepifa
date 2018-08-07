@@ -1,4 +1,5 @@
 $color:rgba(255,255,255,1);
+$Sprite:url("../img/sprite.png") no-repeat;
 #search-border {
   height:2px;
   background-color:rgba(230,45,45,1);
@@ -170,7 +171,7 @@ $color:rgba(255,255,255,1);
       display:inline-block;
       width:16px;
       height:16px;
-      background:url("../img/sprite.png") no-repeat;
+      background:$Sprite;
       background-position:-16px 0;
       float:left;
       margin-top:1px;
@@ -214,7 +215,7 @@ $color:rgba(255,255,255,1);
         display:inline-block;
         width:16px;
         height:16px;
-        background:url("../img/sprite.png") no-repeat;
+        background:$Sprite;
         background-position:0 0;
         float:left;
         margin-top:12px;
@@ -230,10 +231,45 @@ $color:rgba(255,255,255,1);
     height:92px;
   }
 
-  .sm-prices {
-    height:40px;
+  .sm-recorder {
+    height:26px;
     background-color:rgba(245,245,245,1);
     margin-bottom:20px;
+    padding:7px 10px;
+    a {
+      float:left;
+      font-size:14px;
+      color:rgba(153,153,153,1);
+      display:inline-block;
+      width:70px;
+      height:26px;
+      background:$color;
+      text-align:center;
+      line-height:26px;
+      border:1px solid rgba(230,230,230,1);
+      i {
+        display:inline-block;
+        width:16px;
+        height:18px;
+        vertical-align:middle;
+        background:$Sprite;
+      }
+      .re-bg1 {background-position:-456px 0;}
+      .re-bg2 {background-position:-473px 0;}
+    }
+    a:first-child {width:60px;}
+
+    div {
+      float:right;
+      border:1px solid rgba(230,230,230,1);
+      background-color:$color;
+      width:100px;
+      height:26px;
+      font-size:14px;
+      line-height:26px;
+      color:rgba(153,153,153,1);
+      text-align:center;
+    }
   }
 
 
